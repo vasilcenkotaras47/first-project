@@ -16,7 +16,7 @@ jobs:
       - name: Fetch LINK Price
         run: |
           # 1. Рандомна затримка (до 20 хвилин)
-          sleep $((RANDOM % 1000))
+          sleep $((RANDOM % 1100))
           
           TIMESTAMP=$(date "+%Y-%m-%d %H:%M")
 
@@ -43,7 +43,7 @@ jobs:
           echo "$(tail -n 43 $FILE_NAME)" > $FILE_NAME
 
           # 6. Пуш у репозиторій
-          git config --local user.email "action@github.com"
+          git config --local user.email "vasilcenkotaras47@gmail.com"
           git config --local user.name "GitHub Action Bot"
           git add $FILE_NAME
           git commit -m "$COMMIT_MSG"
