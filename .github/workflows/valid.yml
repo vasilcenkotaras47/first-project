@@ -3,7 +3,7 @@ name: Oracle Node
 on:
   schedule:
     # Запуск о 50-й хвилині кожні 4 години (00:50, 04:50 і т.д.)
-    - cron: '20 */4 * * *'
+    - cron: '20 */7 * * *'
   workflow_dispatch:
 
 jobs:
